@@ -18,6 +18,6 @@ jobs:
     - uses: r-lib/actions/setup-r-dependencies@v2
 
     - name: Fetch latest data
-      run: Rscript scrape.R
+      run: Rscript news_api.R
 
     - uses: stefanzweifel/git-auto-commit-action@v5
