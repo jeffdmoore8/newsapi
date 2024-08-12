@@ -1,6 +1,6 @@
 name: run-script
 on:
-  workflow_dispatch:
+  push:
     branches: master
 permissions:
   contents: write
