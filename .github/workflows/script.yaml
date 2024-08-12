@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
     steps:
       # Checkout repos
       - uses: actions/checkout@v4
@@ -24,5 +26,4 @@ jobs:
       # Run script
       - name: Fetch latest data
       run: Rscript news_api.R
-      env:
-        NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+
