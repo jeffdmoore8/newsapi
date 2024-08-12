@@ -1,16 +1,16 @@
 on:
   push:
     branches: master
-permissions:
-  contents: write
 
 name: run-script
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      # Checkout repo
+      # Checkout repos
       - uses: actions/checkout@v4
 
       # Install R
