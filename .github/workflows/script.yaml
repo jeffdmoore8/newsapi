@@ -2,10 +2,10 @@ on:
   push:
     branches: master
 
-name: run-script
+name: script
 
 jobs:
-  run-script:
+  script:
     runs-on: ubuntu-latest
     permissions:
       contents: write
