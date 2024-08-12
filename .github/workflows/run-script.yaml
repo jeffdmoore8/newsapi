@@ -1,11 +1,11 @@
-name: run-script
+name: run-script.yaml
 on:
   push:
     branches: master
 permissions:
   contents: write
 jobs:
-  render:
+  run-script:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
